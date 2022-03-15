@@ -134,6 +134,9 @@ body {
   @media (max-width: 56.25em) {
     .heading-tertiary {
       text-align: center; } }
+  @media (max-width: 37.5em) {
+    .heading-tertiary {
+      text-align: center; } }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -192,13 +195,11 @@ body {
   @media (max-width: 56.25em) {
     .btn, .btn:link, .btn:visited {
       margin: 1rem 1rem;
-      display: inline-block;
-      left: 37%; } }
+      display: inline-block; } }
   @media (max-width: 37.5em) {
     .btn, .btn:link, .btn:visited {
       margin: 1rem 1rem;
-      display: inline-block;
-      left: 37%; } }
+      display: inline-block; } }
 
 .btn:hover {
   transform: translateY(0.3rem);
