@@ -117,10 +117,12 @@ body {
   transition: all 0.2s; }
   @media (max-width: 56.25em) {
     .heading-secondary {
-      font-size: 2.5rem; } }
+      font-size: 2.5rem;
+      text-align: center; } }
   @media (max-width: 37.5em) {
     .heading-secondary {
-      font-size: 2rem; } }
+      font-size: 2rem;
+      text-align: center; } }
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(2deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -129,6 +131,9 @@ body {
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase; }
+  @media (max-width: 56.25em) {
+    .heading-tertiary {
+      text-align: center; } }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -184,6 +189,16 @@ body {
   font-size: 1.6rem;
   border: none;
   cursor: pointer; }
+  @media (max-width: 56.25em) {
+    .btn, .btn:link, .btn:visited {
+      margin: 1rem 1rem;
+      display: inline-block;
+      left: 37%; } }
+  @media (max-width: 37.5em) {
+    .btn, .btn:link, .btn:visited {
+      margin: 1rem 1rem;
+      display: inline-block;
+      left: 37%; } }
 
 .btn:hover {
   transform: translateY(0.3rem);
@@ -543,17 +558,33 @@ body {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.5);
     transition: all 0.5s 0.2s; }
+    @media (max-width: 56.25em) {
+      .popup__content {
+        display: inline; } }
   .popup__left {
     width: 33.333333%;
     display: table-cell; }
+    @media (max-width: 56.25em) {
+      .popup__left {
+        width: 100%; } }
   .popup__right {
     width: 66.666667%;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }
+    @media (max-width: 56.25em) {
+      .popup__right {
+        width: 100%;
+        display: inline;
+        text-align: center;
+        padding: 1rem 25%; } }
   .popup__img {
     display: block;
     width: 100%; }
+    @media (max-width: 56.25em) {
+      .popup__img {
+        width: 45%;
+        display: inline-block; } }
   .popup__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
@@ -561,6 +592,11 @@ body {
     column-gap: 4rem;
     column-rule: 1px solid #eee;
     hyphens: auto; }
+    @media (max-width: 56.25em) {
+      .popup__text {
+        column-count: 1;
+        margin: 0 auto;
+        text-align: center; } }
   .popup:target {
     opacity: 1;
     visibility: visible; }
